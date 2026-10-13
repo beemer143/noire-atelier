@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2ea">
+  <meta name="description" content="NOIRÉ Atelier — a bright, cinematic luxury automotive detailing experience. A ritual for machines.">
+  <title>NOIRÉ Atelier — A ritual for machines</title>
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script defer src="lenis.min.js?v=1"></script>
+  <script defer src="main.js?v=3"></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-panels"><span class="intro-panel"></span><span class="intro-panel"></span><span class="intro-panel"></span><span class="intro-panel"></span></div>
+    <div class="intro-stage"><span class="intro-line"></span><p class="intro-mark">NOIRÉ</p></div>
+    <button class="intro-skip" type="button">Skip introduction</button>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="NOIRÉ Atelier home"><span class="brand-mark">N</span><span>NOIRÉ ATELIER</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#journey">Journey</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#ritual">The ritual</a>
+      <a href="#booking">Book</a>
+    </nav>
+    <a class="header-cta magnetic" href="#booking">Private appointment</a>
+    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#journey"><span>01</span> Journey</a>
+      <a href="#services"><span>02</span> Services</a>
+      <a href="#packages"><span>03</span> Packages</a>
+      <a href="#ritual"><span>04</span> The ritual</a>
+      <a href="#booking"><span>05</span> Book</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <div class="hero-pin">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img src="media/campaign/hero-arrival.jpg" alt="Three supercars in vivid colour under bright light" fetchpriority="high">
+        </div>
+        <div class="hero-atmosphere" aria-hidden="true"></div>
+        <div class="hero-reflection" aria-hidden="true"></div>
+        <div class="hero-lensline" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Automotive spa / private studio</p>
+          <h1 id="hero-title" data-split>The finish<br>is a <em>feeling.</em></h1>
+          <div class="hero-bottom">
+            <p class="hero-copy">NOIRÉ is a private detailing atelier for machines that deserve more than a wash — precision care, quiet confidence, and a finish that lingers in the light.</p>
+            <div class="hero-actions">
+              <a class="button primary magnetic" href="#booking">Reserve your ritual <span>↗</span></a>
+              <a class="button magnetic" href="#services">Explore the atelier <span>↓</span></a>
+            </div>
+            <div class="hero-scroll"><span class="scroll-line"></span><span>Scroll to enter</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="ticker" aria-label="NOIRÉ services ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-item"><strong>Paint correction</strong> by appointment</div>
+        <div class="ticker-item">Ceramic protection <strong>with intent</strong></div>
+        <div class="ticker-item"><strong>Pickup &amp; handover</strong> available</div>
+        <div class="ticker-item">Aftercare <strong>included</strong></div>
+        <div class="ticker-item"><strong>Paint correction</strong> by appointment</div>
+        <div class="ticker-item">Ceramic protection <strong>with intent</strong></div>
+        <div class="ticker-item"><strong>Pickup &amp; handover</strong> available</div>
+        <div class="ticker-item">Aftercare <strong>included</strong></div>
+      </div>
+    </div>
+
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="label-line"></span>01 / The journey</div>
+        <div><h2 id="journey-title" data-split>The car is the<br><em>main character.</em></h2><p class="section-intro">Scroll through the atelier as the vehicle moves from arrival to reveal. Every scene is a considered step in the transformation.</p></div>
+      </div>
+      <div class="journey-shell" id="journeyShell">
+        <div class="journey-stage">
+          <div class="journey-grid-lines" aria-hidden="true"></div>
+          <div class="journey-scene is-active" data-scene="0"><img src="media/campaign/journey-arrival.jpg" alt="A convertible arriving along a coastal road at golden hour" loading="lazy"></div>
+          <div class="journey-scene" data-scene="1"><img src="media/campaign/journey-craft.jpg" alt="A polisher at work on bright paintwork" loading="lazy"></div>
+          <div class="journey-scene" data-scene="2"><img src="media/campaign/journey-correction.jpg" alt="A precision polisher restoring the finish" loading="lazy"></div>
+          <div class="journey-scene" data-scene="3"><img src="media/campaign/journey-protection.jpg" alt="Gloved hands applying protective film" loading="lazy"></div>
+          <div class="journey-scene" data-scene="4"><img src="media/campaign/journey-reveal.jpg" alt="A yellow supercar revealed under directional light" loading="lazy"></div>
+          <div class="journey-scan" aria-hidden="true"></div>
+          <div class="journey-progress"><div class="journey-progress-track"><div class="journey-progress-bar" id="journeyProgressBar"></div></div><small id="journeyProgressLabel">01 / 05</small></div>
+          <div class="journey-caption"><div><span>Live process / NOIRÉ</span><strong id="journeyCaption">Arrival</strong></div><span>Scroll to move</span></div>
+        </div>
+        <div class="journey-steps" id="journeySteps">
+          <article class="journey-step is-active" data-step="0"><span class="journey-step-index">01</span><div><h3>Arrival</h3><p>The vehicle enters a quieter kind of care. We receive the keys, read the surfaces, and set the pace.</p><span class="journey-step-note">A private handover</span></div></article>
+          <article class="journey-step" data-step="1"><span class="journey-step-index">02</span><div><h3>Craft</h3><p>Water, pressure, steam, and handwork move in sequence. The surface starts to let the light back in.</p><span class="journey-step-note">Craft in motion</span></div></article>
+          <article class="journey-step" data-step="2"><span class="journey-step-index">03</span><div><h3>Correction</h3><p>Measured refinement under calibrated light. The noise leaves the paint and clarity takes its place.</p><span class="journey-step-note">Clarity restored</span></div></article>
+          <article class="journey-step" data-step="3"><span class="journey-step-index">04</span><div><h3>Protection</h3><p>Correction is sealed beneath a clear, deliberate veil — a finish built to stay composed beyond the studio.</p><span class="journey-step-note">Clarity, protected</span></div></article>
+          <article class="journey-step" data-step="4"><span class="journey-step-index">05</span><div><h3>Reveal</h3><p>The lights rise, the reflections sharpen, and the vehicle leaves with the quiet confidence of something properly finished.</p><span class="journey-step-note">Perfection, delivered</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="label-line"></span>02 / The atelier</div>
+        <div><h2 id="services-title" data-split>Not a car wash.<br><em>A care ritual.</em></h2><p class="section-intro">Every service is deliberately unhurried. We inspect first, tailor the process to the vehicle, and hand it back with nothing left to chance.</p></div>
+      </div>
+      <div class="services-shell reveal">
+        <div class="service-list" role="tablist" aria-label="Detailing services">
+          <button class="service-tab is-active" data-service="signature" role="tab" aria-selected="true" aria-controls="serviceDetail"><span class="num">01</span><span class="name">Signature wash</span><span class="arrow">↗</span></button>
+          <button class="service-tab" data-service="interior" role="tab" aria-selected="false" aria-controls="serviceDetail"><span class="num">02</span><span class="name">Interior revival</span><span class="arrow">↗</span></button>
+          <button class="service-tab" data-service="correction" role="tab" aria-selected="false" aria-controls="serviceDetail"><span class="num">03</span><span class="name">Paint correction</span><span class="arrow">↗</span></button>
+          <button class="service-tab" data-service="ceramic" role="tab" aria-selected="false" aria-controls="serviceDetail"><span class="num">04</span><span class="name">Ceramic veil</span><span class="arrow">↗</span></button>
+          <button class="service-tab" data-service="concierge" role="tab" aria-selected="false" aria-controls="serviceDetail"><span class="num">05</span><span class="name">Concierge detail</span><span class="arrow">↗</span></button>
+        </div>
+        <div class="service-detail" id="serviceDetail">
+          <div class="service-image-frame">
+            <img id="serviceImage" src="media/campaign/service-wash.jpg" alt="Water beading across a freshly washed surface">
+            <span class="service-sweep" aria-hidden="true"></span>
+          </div>
+          <div class="service-meta"><div><h3 id="serviceTitle">Signature wash</h3><p id="serviceCopy">A hand-finished reset: two-bucket wash, decontamination, wheels, glass and a soft sealant glow.</p></div><div class="service-time" id="serviceTime">90 min</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packages" aria-labelledby="packages-title">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="label-line"></span>03 / Private packages</div>
+        <div><h2 id="packages-title" data-split>Choose your<br><em>level of obsession.</em></h2><p class="section-intro">Three considered ways in. Every package includes an inspection, studio-grade materials, and a final handover briefing.</p></div>
+      </div>
+      <div class="packages">
+        <article class="package reveal"><div class="package-kicker">The reset</div><h3>Obsidian</h3><p class="package-copy">For the car that needs to feel new again — without losing a day to the process.</p><div class="package-price">$180 <small>from</small></div><ul class="package-list"><li>Signature wash &amp; decontamination</li><li>Interior refresh</li><li>Glass and trim finish</li><li>30-day protection</li></ul><button class="button package-select magnetic" data-package="Obsidian">Select package <span>↗</span></button></article>
+        <article class="package featured reveal"><span class="package-badge">Most requested</span><div class="package-kicker">The signature</div><h3>Atelier</h3><p class="package-copy">Our considered full detail for collectors, daily icons, and everything in between.</p><div class="package-price">$420 <small>from</small></div><ul class="package-list"><li>Everything in Obsidian</li><li>Single-stage paint refinement</li><li>Leather conditioning</li><li>90-day ceramic seal</li></ul><button class="button primary package-select magnetic" data-package="Atelier">Select package <span>↗</span></button></article>
+        <article class="package reveal"><div class="package-kicker">The preservation</div><h3>Black Label</h3><p class="package-copy">An extended studio appointment for the finish that deserves a long memory.</p><div class="package-price">$980 <small>from</small></div><ul class="package-list"><li>Multi-stage paint correction</li><li>Interior restoration</li><li>Two-year ceramic coating</li><li>Concierge pickup and return</li></ul><button class="button package-select magnetic" data-package="Black Label">Select package <span>↗</span></button></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="transformation-title">
+      <div class="transformation">
+        <div class="transformation-copy reveal">
+          <div class="section-label"><span class="label-line"></span>04 / The transformation</div>
+          <h2 id="transformation-title" data-split>Light finds<br><em>every surface.</em></h2>
+          <p>Drag across the finish to see the difference that patience, proper lighting, and a disciplined hand can make. This is the moment the car remembers how to look.</p>
+          <div class="micro-note">Drag the line / reveal the finish</div>
+        </div>
+        <div class="compare reveal" id="compare">
+          <img class="compare-before" src="media/detail.jpg" alt="Vehicle finish before detailing">
+          <img class="compare-after" id="compareAfter" src="media/finish.jpg" alt="Vehicle finish after detailing">
+          <span class="compare-label before">Before</span>
+          <span class="compare-label after">After</span>
+          <span class="compare-handle" id="compareHandle" aria-hidden="true"></span>
+          <input id="compareRange" type="range" min="8" max="92" value="50" aria-label="Compare before and after finish">
+        </div>
+      </div>
+    </section>
+
+    <section class="ritual" id="ritual" aria-labelledby="ritual-title">
+      <div class="section">
+        <div class="section-header reveal">
+          <div class="section-label"><span class="label-line"></span>05 / The ritual</div>
+          <div><h2 id="ritual-title" data-split>Precision, from<br><em>arrival to handover.</em></h2><p class="section-intro">The experience is designed around trust. You always know what happens next, why it matters, and who is responsible for the final detail.</p></div>
+        </div>
+        <div class="ritual-grid">
+          <div class="ritual-steps">
+            <div class="ritual-step reveal"><span class="step-no">01</span><div><h3>Private arrival</h3><p>We receive the vehicle, walk the panels, and note every nuance before touching the paint.</p></div><span class="step-time">00:15</span></div>
+            <div class="ritual-step reveal"><span class="step-no">02</span><div><h3>Tailored treatment</h3><p>Materials, pressure, temperature, and technique shift around the vehicle in front of us.</p></div><span class="step-time">01:30</span></div>
+            <div class="ritual-step reveal"><span class="step-no">03</span><div><h3>Studio quality check</h3><p>Under calibrated light, we inspect the finish from every angle before the reveal.</p></div><span class="step-time">00:20</span></div>
+            <div class="ritual-step reveal"><span class="step-no">04</span><div><h3>Handover briefing</h3><p>You leave with the keys, the aftercare ritual, and a finish that earns a second look.</p></div><span class="step-time">00:15</span></div>
+          </div>
+          <aside class="ritual-note reveal"><p class="quote">"The quietest part of luxury is knowing <em>nothing was rushed.</em>"</p><p>NOIRÉ Atelier works by private appointment in a purpose-built studio. For collector vehicles and time-sensitive handovers, our concierge team can coordinate pickup and return.</p></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="film-title">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="label-line"></span>06 / In motion</div>
+        <div><h2 id="film-title" data-split>A studio built<br><em>for movement.</em></h2><p class="section-intro">A horizontal cut of the NOIRÉ process — designed to be explored like a short automotive film.</p></div>
+      </div>
+      <div class="film-rail reveal" id="filmRail" aria-label="Cinematic service gallery" tabindex="0">
+        <article class="film-panel"><div class="film-panel-media"><img src="media/campaign/film-arrival.jpg" alt="A sports car on an open country road" loading="lazy"></div><div class="film-panel-copy"><small>01 / Arrival</small><h3>Enter quietly.</h3><p>The first impression is part of the service.</p></div></article>
+        <article class="film-panel"><div class="film-panel-media"><img src="media/campaign/film-craft.jpg" alt="A modified sports car under architectural light" loading="lazy"></div><div class="film-panel-copy"><small>02 / Craft</small><h3>Work the light.</h3><p>Every panel gets the attention it can hold.</p></div></article>
+        <article class="film-panel"><div class="film-panel-media"><img src="media/campaign/film-correction.jpg" alt="A supercar on a mountain pass" loading="lazy"></div><div class="film-panel-copy"><small>03 / Correction</small><h3>Return the reflection.</h3><p>Noise leaves. Clarity stays.</p></div></article>
+        <article class="film-panel"><div class="film-panel-media"><img src="media/campaign/film-protection.jpg" alt="A classic sports car in warm daylight" loading="lazy"></div><div class="film-panel-copy"><small>04 / Protection</small><h3>Seal the moment.</h3><p>A clear veil for the miles ahead.</p></div></article>
+        <article class="film-panel"><div class="film-panel-media"><img src="media/campaign/film-reveal.jpg" alt="A performance car in cinematic light" loading="lazy"></div><div class="film-panel-copy"><small>05 / Reveal</small><h3>Leave composed.</h3><p>Perfection, delivered.</p></div></article>
+      </div>
+      <div class="film-rail-hint">Drag to explore the sequence</div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="label-line"></span>07 / The gallery</div>
+        <div><h2 id="gallery-title" data-split>A small archive of<br><em>good light.</em></h2><p class="section-intro">A finish is best understood in motion — when the bodywork catches a streetlamp, a sunset, or the first light in the garage.</p></div>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card reveal"><div class="gallery-media"><img src="media/campaign/gallery-01.jpg" alt="A white sports car in bright sunshine" loading="lazy"></div><figcaption class="gallery-caption"><span>Daylight / 01</span><span>Obsidian</span></figcaption></figure>
+        <figure class="gallery-card reveal"><div class="gallery-media"><img src="media/campaign/gallery-02.jpg" alt="A yellow supercar with doors open" loading="lazy"></div><figcaption class="gallery-caption"><span>Golden / 02</span><span>Atelier</span></figcaption></figure>
+        <figure class="gallery-card reveal"><div class="gallery-media"><img src="media/campaign/gallery-03.jpg" alt="City lights streaking past at night" loading="lazy"></div><figcaption class="gallery-caption"><span>After hours / 03</span><span>Black label</span></figcaption></figure>
+        <figure class="gallery-card reveal"><div class="gallery-media"><img src="media/campaign/gallery-04.jpg" alt="Convertibles on a Riviera boulevard at golden hour" loading="lazy"></div><figcaption class="gallery-caption"><span>Riviera / 04</span><span>Crafted finish</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="booking-shell reveal">
+        <aside class="booking-aside">
+          <div>
+            <div class="section-label"><span class="label-line"></span>08 / Private appointment</div>
+            <h2 id="booking-title" data-split>Your vehicle.<br><em>Refined.</em></h2>
+            <p>Experience detailing without compromise. Tell us a little about the vehicle and the level of care you have in mind. We will come back with a considered recommendation.</p>
+          </div>
+          <div class="booking-aside-bottom"><span>Studio only</span><span>By appointment</span></div>
+        </aside>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-top"><h3>Reserve a place</h3><p>Fictional experience — form is local-only for this concept build.</p></div>
+          <div class="form-section"><span class="form-label">01 / Choose your package</span><div class="choice-row"><div class="choice"><input type="radio" id="pkgObs" name="package" value="Obsidian" required><label for="pkgObs">Obsidian / $180</label></div><div class="choice"><input type="radio" id="pkgAtelier" name="package" value="Atelier" checked required><label for="pkgAtelier">Atelier / $420</label></div><div class="choice"><input type="radio" id="pkgBlack" name="package" value="Black Label" required><label for="pkgBlack">Black Label / $980</label></div></div></div>
+          <div class="form-section"><span class="form-label">02 / Your vehicle</span><div class="form-grid"><div class="field"><label for="vehicleMake">Make</label><input id="vehicleMake" name="make" required placeholder="e.g. Porsche"></div><div class="field"><label for="vehicleModel">Model</label><input id="vehicleModel" name="model" required placeholder="e.g. 911 Carrera S"></div><div class="field full"><label for="vehicleNote">What should we know?</label><input id="vehicleNote" name="note" placeholder="Paint history, interior needs, pickup request…"></div></div></div>
+          <div class="form-section"><span class="form-label">03 / Your details</span><div class="form-grid"><div class="field"><label for="guestName">Name</label><input id="guestName" name="name" required placeholder="Your name"></div><div class="field"><label for="guestEmail">Email</label><input id="guestEmail" name="email" type="email" required placeholder="you@example.com"></div><div class="field"><label for="guestDate">Preferred date</label><input id="guestDate" name="date" type="date" required></div><div class="field"><label for="guestWindow">Arrival window</label><select id="guestWindow" name="window"><option>Morning / 09:00–12:00</option><option>Afternoon / 13:00–16:00</option><option>Evening / 17:00–19:00</option></select></div></div></div>
+          <div class="form-submit"><button class="button primary magnetic" type="submit">Request appointment <span>↗</span></button><small>No payment. No external submission.</small></div>
+          <div class="success-message" id="successMessage" role="status">Your request has been staged locally. NOIRÉ would be in touch with a tailored recommendation.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">N</span><span>NOIRÉ ATELIER</span></a><div class="footer-links"><a href="#services">Services</a><a href="#booking">Booking</a><a href="mailto:hello@noire-atelier.example">Email</a></div><span>© <span id="year"></span> NOIRÉ Atelier</span></div>
+    <div class="credits"><strong>Image credits:</strong> campaign photography from Unsplash and Pexels. Source asset IDs are documented in README.md; verify individual photographer attribution and current usage terms before public launch. NOIRÉ Atelier is an invented brand; no real booking, payment, or customer data is transmitted.</div>
+  </footer>
+</body>
+</html>
